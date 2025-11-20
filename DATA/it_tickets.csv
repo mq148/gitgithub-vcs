@@ -1,0 +1,9 @@
+ticket_id,priority,status,category,subject,description,created_date,resolved_date,assigned_to
+TCK-1001,High,Open,Network,Internet down,Office cannot access the internet.,2025-01-10,,john
+TCK-1002,Medium,In Progress,Software,Outlook not working,User unable to send emails.,2025-01-11,,maria
+TCK-1003,Low,Closed,Hardware,Keyboard replacement,Keys not functioning properly.,2025-01-05,2025-01-06,peter
+TCK-1004,Critical,Resolved,Security,Unauthorized access alert,Suspicious login activity detected.,2025-01-08,2025-01-08,security_team
+TCK-1005,High,Open,Network,VPN Issues,User cannot connect to VPN.,2025-01-12,,john
+TCK-1006,Medium,In Progress,Software,Excel crashing,Excel crashes on large files.,2025-01-15,,maria
+TCK-1007,Critical,Investigating,Hardware,Server overheating,High temperature on server rack 2.,2025-01-16,,peter
+TCK-1008,Low,Resolved,Other,Password reset,User forgot password.,2025-01-17,2025-01-17,helpdesk

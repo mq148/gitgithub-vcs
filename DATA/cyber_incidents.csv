@@ -1,0 +1,11 @@
+date,incident_type,severity,status,description,reported_by
+2025-01-12,Phishing,High,Open,Employee received suspicious email requesting credentials.,alice
+2025-01-14,Malware,Critical,Investigating,Ransomware detected on workstation PC-22.,bob
+2025-01-18,DDoS,High,Resolved,Public website experienced heavy traffic causing downtime.,system
+2025-01-20,Unauthorized Access,Medium,Open,Login attempts detected from unknown IP address.,security_bot
+2025-01-22,Data Leak,Critical,Closed,Internal file accidentally shared externally.,charlie
+2025-01-25,Phishing,Low,Resolved,Suspicious email reported but confirmed harmless.,david
+2025-01-28,Malware,High,Investigating,Virus detected in download folder.,emma
+2025-02-01,Social Engineering,Medium,Open,Caller impersonating IT requesting account reset.,frank
+2025-02-03,Brute Force,High,Open,Multiple failed login attempts on admin account.,admin
+2025-02-05,Insider Threat,Critical,Investigating,Unusual privileged access by terminated employee.,security_admin
