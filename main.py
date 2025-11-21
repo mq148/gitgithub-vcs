@@ -4,11 +4,15 @@ import os
 import pandas as pd
 from pathlib import Path
 
-# Database and schema
+# ----------------------------------------
+# DATABASE AND SCHEMA IMPORTS
+# ----------------------------------------
 from app.data.db import connect_database, load_csv_to_table, load_all_csv_data
 from app.data.schema import create_all_tables
 
-# Incidents
+# ----------------------------------------
+# INCIDENTS IMPORTS
+# ----------------------------------------
 from app.data.incidents import (
     insert_incident,
     get_all_incidents,
@@ -18,8 +22,15 @@ from app.data.incidents import (
     get_high_severity_by_status
 )
 
-# User services
-from app.services.user_services import register_user, login_user, migrate_users_from_file
+# ----------------------------------------
+# USER SERVICES
+# (FIXED — correct module name)
+# ----------------------------------------
+from app.services.user_service import (
+    register_user,
+    login_user,
+    migrate_users_from_file
+)
 
 # ----------------------------------------
 # INITIAL SETUP
@@ -44,6 +55,7 @@ def initialize_database():
     print(f"Migrated {user_count} users from file.")
 
     return conn
+
 
 # ----------------------------------------
 # MAIN FUNCTION
@@ -74,9 +86,9 @@ def main():
 # DATABASE SETUP SUMMARY
 # ----------------------------------------
 def setup_database_complete():
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("STARTING COMPLETE DATABASE SETUP")
-    print("="*60)
+    print("=" * 60)
 
     conn = initialize_database()
 
@@ -97,9 +109,9 @@ def setup_database_complete():
 # RUN TESTS
 # ----------------------------------------
 def run_comprehensive_tests():
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("RUNNING COMPREHENSIVE TESTS")
-    print("="*60)
+    print("=" * 60)
 
     conn = connect_database()
 
